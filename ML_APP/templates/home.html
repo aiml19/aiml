@@ -19,21 +19,17 @@
 
 	<div class="ml-container">
 
-		<form action="{{ url_for('predict')}}" method="POST">
-		<p>Enter Your problem description here</p>
-		<!-- <input type="text" name="comment"/> -->
-		<textarea name="comment" rows="4" cols="50"></textarea>
+		<form action="{{ url_for('abc')}}" method="POST">
+			<p>Enter Your problem description here</p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea name="comment" rows="4" cols="50"></textarea>
 		<br/>
 
 		<input type="submit" class="btn-info" value="predict">
-
-	</form>
+		</form>
+	<h2 style="color:blue;">{%  print(prediction) %}</var></h2>
 
 	</div>
-
-
-
-
 </body>
 </html>
 
